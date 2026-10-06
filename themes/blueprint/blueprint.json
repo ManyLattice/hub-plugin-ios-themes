@@ -1,0 +1,63 @@
+{
+ "name": "iOS · Blueprint",
+ "dark": true,
+ "colors": {
+  "background": "#0d2238",
+  "foreground": "#e6f0fa",
+  "card": "#12304d",
+  "muted": "#163857",
+  "muted-2": "#1b4166",
+  "muted-foreground": "#8fa9c4",
+  "accent": "#163857",
+  "border": "#1f4a73",
+  "input": "#2a5a87",
+  "primary": "#f05138",
+  "primary-foreground": "#ffffff",
+  "ring": "#5ac8fa",
+  "destructive": "#ff6b63",
+  "warning": "#ffcc00",
+  "success": "#4cd964",
+  "code": "#5ac8fa",
+  "hl-attr": "#fc8fc3"
+ },
+ "art": {
+  "image": "art/blueprint.jpg",
+  "veil": 0.7,
+  "position": "center",
+  "glass": true,
+  "credit": "Арт: сгенерирован для темы. Значки: Icons8 (iOS)"
+ },
+ "icons": {
+  "account": "i/account.png",
+  "settings": "i/settings.png",
+  "clock": "i/clock.png",
+  "schedule": "i/schedule.png",
+  "flow": "i/flow.png",
+  "send": "i/send.png",
+  "search": "i/search.png",
+  "board": "i/board.png",
+  "attach": "i/attach.png",
+  "mic": "i/mic.png",
+  "allow": "i/allow.png",
+  "deny": "i/deny.png",
+  "close": "i/close.png",
+  "close-session": "i/close-session.png",
+  "stop": "i/stop.png",
+  "browser": "i/browser.png"
+ },
+ "avatars": {
+  "🧑‍💻": "a/source-code.png",
+  "👨‍💻": "a/source-code.png",
+  "🧪": "a/test-tube.png",
+  "📣": "a/megaphone.png",
+  "🍏": "a/smartphone.png",
+  "🎨": "a/paint-palette.png",
+  "🛠️": "a/support.png",
+  "🛠": "a/support.png",
+  "🔎": "a/search.png",
+  "🔍": "a/search.png",
+  "📦": "a/box.png",
+  "🧭": "a/compass.png",
+  "🤖": "a/bot.png"
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "name": "iOS · Liquid Glass",
+ "dark": false,
+ "colors": {
+  "background": "#f2f2f7",
+  "foreground": "#1c1c1e",
+  "card": "#ffffff",
+  "muted": "#e9e9ef",
+  "muted-2": "#dedee6",
+  "muted-foreground": "#6e6e73",
+  "accent": "#e9e9ef",
+  "border": "#d1d1d6",
+  "input": "#c7c7cc",
+  "primary": "#007aff",
+  "primary-foreground": "#ffffff",
+  "ring": "#007aff",
+  "destructive": "#d70015",
+  "warning": "#c93400",
+  "success": "#248a3d",
+  "code": "#ad3da4",
+  "hl-attr": "#3900a0"
+ },
+ "art": {
+  "image": "art/wallpaper.jpg",
+  "veil": 0.55,
+  "position": "center",
+  "glass": true,
+  "credit": "Арт: сгенерирован для темы. Значки: Icons8 (iOS)"
+ },
+ "icons": {
+  "account": "i/account.png",
+  "settings": "i/settings.png",
+  "clock": "i/clock.png",
+  "schedule": "i/schedule.png",
+  "flow": "i/flow.png",
+  "send": "i/send.png",
+  "search": "i/search.png",
+  "board": "i/board.png",
+  "attach": "i/attach.png",
+  "mic": "i/mic.png",
+  "allow": "i/allow.png",
+  "deny": "i/deny.png",
+  "close": "i/close.png",
+  "close-session": "i/close-session.png",
+  "stop": "i/stop.png",
+  "browser": "i/browser.png"
+ },
+ "avatars": {
+  "🧑‍💻": "a/source-code.png",
+  "👨‍💻": "a/source-code.png",
+  "🧪": "a/test-tube.png",
+  "📣": "a/megaphone.png",
+  "🍏": "a/smartphone.png",
+  "🎨": "a/paint-palette.png",
+  "🛠️": "a/support.png",
+  "🛠": "a/support.png",
+  "🔎": "a/search.png",
+  "🔍": "a/search.png",
+  "📦": "a/box.png",
+  "🧭": "a/compass.png",
+  "🤖": "a/bot.png"
+ }
+}
