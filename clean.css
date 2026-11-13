@@ -1,0 +1,51 @@
+/* Clean layout for the plugin's themes (clean.js sets html.ios-clean next to the core's th-clean): the shell around the
+   window is the theme art, the window is a thin frosted plate the art shows through; text tints come from the theme
+   colors, not Clean's gray; main buttons and selected tabs are in the theme accent */
+html.ios-clean.th-clean {
+  --c-t1: color-mix(in oklch, var(--foreground) 94%, transparent);
+  --c-t2: color-mix(in oklch, var(--foreground) 68%, transparent);
+  --c-t3: color-mix(in oklch, var(--foreground) 46%, transparent);
+  --c-preview: color-mix(in oklch, var(--foreground) 66%, transparent);
+  --c-fill: color-mix(in oklch, var(--foreground) 8%, transparent);
+  --c-hover: color-mix(in oklch, var(--foreground) 5%, transparent);
+  --c-badge: color-mix(in oklch, var(--foreground) 13%, transparent);
+  --c-line: color-mix(in oklch, var(--foreground) 14%, transparent);
+  --c-line-soft: color-mix(in oklch, var(--foreground) 8%, transparent);
+  --c-line-strong: color-mix(in oklch, var(--foreground) 32%, transparent);
+  --c-shell: var(--background);
+  --ios-window: 50%;
+  --ios-blur: 6px;
+  --ios-list: 0%;
+  --ios-list-blur: var(--ios-blur);
+  /* white text on the accent itself is under 4.5:1, so each theme picks a fill and text that pass it */
+  --ios-accent: var(--primary);
+  --ios-on-accent: var(--primary-foreground);
+}
+html.ios-clean.th-clean[data-ios-theme="liquid"] { --ios-window: 24%; --ios-blur: 6px; --ios-accent: #0071e3; --ios-on-accent: #ffffff; }
+html.ios-clean.th-clean[data-ios-theme="blueprint"] { --ios-window: 24%; --ios-blur: 1.5px; --ios-list: 34%; --ios-list-blur: 2.5px; --ios-on-accent: #0d2238; }
+
+html.ios-clean.th-clean.has-art main, html.ios-clean.th-clean.has-art .side {
+  background: color-mix(in oklch, var(--background) var(--ios-window), transparent);
+  -webkit-backdrop-filter: blur(var(--ios-blur)) saturate(1.3); backdrop-filter: blur(var(--ios-blur)) saturate(1.3);
+}
+html.ios-clean.th-clean.glass main > .head { background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
+html.ios-clean.th-clean.glass aside { background: color-mix(in oklch, var(--background) var(--ios-list), transparent);
+  -webkit-backdrop-filter: blur(var(--ios-list-blur)); backdrop-filter: blur(var(--ios-list-blur)); }
+/* cards stay a dense plate (code blocks are already opaque in Clean): thin lines of the art under code make it hard to read */
+html.ios-clean.th-clean .card { background: color-mix(in oklch, var(--card) 92%, transparent); }
+
+html.ios-clean.th-clean :is(.btn.primary, .btn.solid, .mcpwait-row .btn.primary, .btn.round.send) {
+  background: var(--ios-accent); color: var(--ios-on-accent); border-color: transparent; }
+html.ios-clean.th-clean :is(.active-bar, .seg) button[aria-pressed="true"] { background: var(--ios-accent); color: var(--ios-on-accent); }
+html.ios-clean.th-clean :is(.active-bar, .seg) button[aria-pressed="true"] .c-n { background: color-mix(in oklch, var(--ios-on-accent) 22%, transparent); color: inherit; }
+@media (hover: hover) and (pointer: fine) {
+  html.ios-clean.th-clean :is(.btn.primary, .btn.solid, .btn.round.send):hover { background: color-mix(in oklch, var(--ios-accent) 88%, var(--ios-on-accent)); }
+  html.ios-clean.th-clean :is(.active-bar, .seg) button[aria-pressed="true"]:hover { background: var(--ios-accent); color: var(--ios-on-accent); }
+}
+
+html.ios-clean.th-clean[data-ios-theme="liquid"] main, html.ios-clean.th-clean[data-ios-theme="liquid"] .side {
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.6) inset, 0 8px 32px -12px rgb(0 0 0 / 0.18);
+}
+html.ios-clean.th-clean[data-ios-theme="blueprint"] main, html.ios-clean.th-clean[data-ios-theme="blueprint"] .side {
+  box-shadow: 0 0 0 1px color-mix(in oklch, var(--ring) 26%, transparent) inset;
+}
