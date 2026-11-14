@@ -49,3 +49,28 @@ html.ios-clean.th-clean[data-ios-theme="liquid"] main, html.ios-clean.th-clean[d
 html.ios-clean.th-clean[data-ios-theme="blueprint"] main, html.ios-clean.th-clean[data-ios-theme="blueprint"] .side {
   box-shadow: 0 0 0 1px color-mix(in oklch, var(--ring) 26%, transparent) inset;
 }
+
+/* list status in the theme color: "working" (three dots) and "new" (one dot) are bigger and glow. Blueprint takes the cyan of the
+   art's lines, not the orange accent: #f05138 is 8° of hue from the red "waiting for you" badge and reads as the same alarm */
+html.ios-clean.th-clean { --ios-dot: var(--ios-accent); }
+html.ios-clean.th-clean[data-ios-theme="blueprint"] { --ios-dot: #5ac8fa; }
+html.ios-clean.th-clean #list .srow > .dot::before { width: 8px; height: 8px; background: var(--ios-dot);
+  box-shadow: 0 0 6px 1px color-mix(in srgb, var(--ios-dot) 70%, transparent); }
+html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"]) {
+  width: 5px; height: 5px; margin: 6px 7px 5px 7px; color: var(--ios-dot); animation-name: ios-dot-wave-mid; }
+html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"])::before,
+html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"])::after {
+  width: 5px; height: 5px; inset-inline-start: -7px; animation-name: ios-dot-wave; }
+html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"])::after { inset-inline-start: 7px; }
+html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"]),
+html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"])::before,
+html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"])::after {
+  box-shadow: 0 0 5px 1px color-mix(in srgb, var(--ios-dot) 55%, transparent); }
+@keyframes ios-dot-wave { 0%, 50%, 100% { opacity: .4; } 25% { opacity: 1; } }
+@keyframes ios-dot-wave-mid { 0%, 50%, 100% { background-color: color-mix(in srgb, currentColor 40%, transparent); }
+  25% { background-color: currentColor; } }
+@media (prefers-reduced-motion: reduce) {
+  html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"]) { animation: none; background: currentColor; }
+  html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"])::before,
+  html.ios-clean.th-clean #list .srow > .glyph:is([data-s="busy"], [data-s="starting"])::after { animation: none; opacity: 1; }
+}
