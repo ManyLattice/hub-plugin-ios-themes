@@ -1,9 +1,9 @@
 {
   "name": "ios-themes",
   "icon": "icon.png",
-  "description": "Темы хаба для iOS-разработчика: Liquid Glass - светлая, стекло поверх обоев в духе iOS 26; Blueprint - тёмный чертёж Interface Builder с оранжевым акцентом. Значки и аватары Icons8 в стиле iOS",
-  "why": "Хаб в привычной среде iOS-разработчика: светлая тема на день и тёмная на вечер, одна установка",
-  "version": "1.1.1",
+  "description": "Hub themes for an iOS developer: Liquid Glass, light, glass over a wallpaper in the spirit of iOS 26; Blueprint, a dark Interface Builder blueprint with an orange accent. Icons8 icons and avatars in the iOS style",
+  "why": "The hub in an iOS developer's familiar surroundings: a light theme for the day and a dark one for the evening, one install",
+  "version": "1.1.2",
   "hub": "^1.36",
   "web": "clean.js",
   "themes": [

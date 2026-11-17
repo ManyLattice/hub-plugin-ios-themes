@@ -1,12 +1,12 @@
-# iOS themes - темы хаба для iOS-разработчика
+# iOS themes - hub themes for an iOS developer
 
-Две темы в вёрстке встроенной темы хаба Clean (шрифт Geist, радиусы и отступы Clean, тонкие значки), со своими артом и палитрой:
+Two themes in the layout of the hub's built-in Clean theme (the Geist font, Clean's radii and spacing, thin icons), with their own art and palette:
 
-- **iOS · Liquid Glass** - светлая: обои с мягкими стеклянными волнами в духе iOS 26, панели из матового стекла, акцент #007AFF.
-- **iOS · Blueprint** - тёмная: чертёж Interface Builder (сетка, контуры устройств, размеры и отступы), акцент Swift-оранжевый #F05138.
+- **iOS · Liquid Glass** - light: a wallpaper of soft glass waves in the spirit of iOS 26, frosted glass panels, accent #007AFF.
+- **iOS · Blueprint** - dark: an Interface Builder blueprint (grid, device outlines, sizes and margins), Swift-orange accent #F05138.
 
 ![iOS themes](icon.png)
 
-Значки - [Icons8](https://icons8.com) в стиле iOS, аватары сессий - Icons8 iOS Filled (читаются и на 16 px). Арт сгенерирован для темы, без логотипов и товарных знаков.
+Icons - [Icons8](https://icons8.com) in the iOS style, session avatars - Icons8 iOS Filled (readable even at 16 px). The art is generated for the theme, with no logos or trademarks.
 
-Выбор - «Настройки» → «Тема». Вёрстку Clean ставит `clean.js` плагина (нужен хаб с темой Clean, Plugin API 1.36+); без него темы ложатся на «Классику».
+Pick one in "Settings" → "Look" → "Theme". The Clean layout is applied by the plugin's `clean.js` (needs a hub with the Clean theme, Plugin API 1.36+); without it the themes lie over "Classic".
